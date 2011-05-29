@@ -15,10 +15,10 @@ Features include:
 	- Both asynchronous (GMainLoop and callback-based) and synchronous APIs
 	- Automatically caches connections
 	- SSL Support using GnuTLS
-	-	Proxy support, including authentication and SSL tunneling
-	-	Client support for Digest, NTLM, and Basic authentication
+	- Proxy support, including authentication and SSL tunneling
+	- Client support for Digest, NTLM, and Basic authentication
 	- Server support for Digest and Basic authentication
-	-	Client and server support for XML-RPC
+	- Client and server support for XML-RPC
 
 For more information about libsoup refer to the library's web site:
 
