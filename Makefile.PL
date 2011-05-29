@@ -21,6 +21,14 @@ sub main {
 			'Glib::Object::Introspection' => 0,
 		},
 		PREREQ_FATAL  => 1,
+
+		META_MERGE => {
+			resources => {
+				homepage    => 'https://github.com/potyl/perl-HTTP-Soup',
+				bucktracker => 'https://github.com/potyl/perl-HTTP-Soup/issues',
+				repository  => 'https://github.com/potyl/perl-HTTP-Soup',
+			},
+		},
 	);
 	WriteMakefile(@args);
 
