@@ -62,6 +62,10 @@ Glib::Object::Introspection->setup(
 
 1;
 
+=head1 BUGS
+
+For any kind of help or support simply send a mail to the gtk-perl mailing
+list (gtk-perl-list@gnome.org).
 
 =head1 AUTHORS
 
