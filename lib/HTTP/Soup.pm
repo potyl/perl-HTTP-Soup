@@ -30,7 +30,7 @@ Features include:
 
 =item * Proxy support, including authentication and SSL tunneling
 
-=item * lient support for Digest, NTLM, and Basic authentication
+=item * Client support for Digest, NTLM, and Basic authentication
 
 =item * Server support for Digest and Basic authentication
 
