@@ -10,11 +10,37 @@ HTTP::Soup - HTTP client/server library for GNOME
 
 =head1 DESCRIPTION
 
-Soup consists of the Perl bindings for the C library libsoup which HTTP
-client/server library for GNOME.
+This module provides the Perl bindings for the C library I<libsoup>.
 
-For more information about libsoup see:
-L<http://live.gnome.org/LibSoup>.
+Lisoup is an HTTP client/server library for GNOME. It uses GObjects and the glib
+main loop, to integrate well with GNOME applications, and also has a synchronous
+API, for use in threaded applications.
+
+Libsoup is used in many GNOME projects and other software including gtk-webkit.
+
+Features include:
+
+=over 8
+
+=item * Both asynchronous (GMainLoop and callback-based) and synchronous APIs
+
+=item * Automatically caches connections
+
+=item * SSL Support using GnuTLS
+
+=item * Proxy support, including authentication and SSL tunneling
+
+=item * lient support for Digest, NTLM, and Basic authentication
+
+=item * Server support for Digest and Basic authentication
+
+=item * Client and server support for XML-RPC
+
+=back
+
+For more information about libsoup refer to the library's web site:
+
+	http://live.gnome.org/LibSoup
 
 =cut
 
