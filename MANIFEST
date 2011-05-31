@@ -6,3 +6,7 @@ README
 t/session.t
 COPYING
 Changes
+maps
+soup-perl.h
+xs/MessageBody.xs
+xs/Soup.xs

@@ -47,7 +47,11 @@ For more information about libsoup refer to the library's web site:
 use warnings;
 use strict;
 
+use base 'DynaLoader';
+use Exporter 'import';
+
 use Glib::Object::Introspection;
+use Glib;
 
 
 our $VERSION = '0.01';
@@ -58,6 +62,11 @@ Glib::Object::Introspection->setup(
 	version  => '2.4',
 	package  => __PACKAGE__,
 );
+
+
+sub dl_load_flags { $^O eq 'darwin' ? 0x00 : 0x01 }
+
+__PACKAGE__->bootstrap($VERSION);
 
 
 1;
