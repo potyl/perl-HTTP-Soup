@@ -47,10 +47,10 @@ For more information about libsoup refer to the library's web site:
 use warnings;
 use strict;
 
+our $VERSION = '0.02';
 
 use Glib::Object::Introspection;
 
-our $VERSION = '0.01';
 Glib::Object::Introspection->setup(
 	basename => 'Soup',
 	version  => '2.4',
