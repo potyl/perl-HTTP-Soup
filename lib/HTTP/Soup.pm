@@ -48,11 +48,8 @@ use warnings;
 use strict;
 
 use base 'DynaLoader';
-use Exporter 'import';
 
 use Glib::Object::Introspection;
-use Glib;
-
 
 our $VERSION = '0.01';
 
