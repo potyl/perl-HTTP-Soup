@@ -1,1 +1,2 @@
 SOUP_TYPE_MESSAGE_BODY        SoupMessageBody        GBoxed        HTTP::Soup::MessageBody
+SOUP_TYPE_BUFFER              SoupBuffer             GBoxed        HTTP::Soup::Buffer
