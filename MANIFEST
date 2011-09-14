@@ -4,9 +4,12 @@ MANIFEST
 MANIFEST.SKIP
 README
 t/session.t
+t/server.t
 COPYING
 Changes
 maps
 soup-perl.h
+xs/Buffer.xs
+xs/Message.xs
 xs/MessageBody.xs
 xs/Soup.xs
