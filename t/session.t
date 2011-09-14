@@ -26,7 +26,6 @@ sub test_async {
 }
 
 
-
 sub test_sync {
     my $session = HTTP::Soup::SessionSync->new();
     isa_ok($session, 'HTTP::Soup::SessionSync');
