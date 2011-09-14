@@ -9,7 +9,7 @@ data (SoupMessageBody *body, const char *val = NULL)
 	CODE:
 		if (items > 1) {
 			body->data = val;
-			/* We can't return the 'data' array since we don't know it's length yet */
+			/* We can't return the 'data' array since we don't know its length yet */
 			RETVAL = NULL;
 		}
 		else {
