@@ -1,7 +1,4 @@
-Revision history for HTT::Soup
+Revision history for HTTP::Soup
 
-0.02 Thu Jun 23 16:52:33 CEST 2011
-	Remove unused modules (Glib & Exporter)
-
-0.01 Sun May 29 12:11:15 CEST 2011
+0.01 Thu Sep 15 21:45:58 CEST 2011
 	First version, released on an unsuspecting world.
