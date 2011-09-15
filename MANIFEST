@@ -5,6 +5,7 @@ MANIFEST.SKIP
 README
 t/session.t
 t/server.t
+t/uri.t
 COPYING
 Changes
 maps
