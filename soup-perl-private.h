@@ -3,10 +3,7 @@
 
 #include "soup-perl.h"
 
-GPerlCallback*
-soupperl_message_callback_create (SV *func, SV *data);
-
 void
-soupperl_message_callback (SoupSession *session, SoupMessage *msg, gpointer data);
+soupperl_queue_message (SoupSession *session, SoupMessage *msg, SV  *sv_callback, SV *sv_user_data);
 
 #endif /* _SOUP_PERL_PRIVATE_H_ */

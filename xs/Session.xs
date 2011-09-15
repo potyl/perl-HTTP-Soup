@@ -1,7 +1,7 @@
 #include "soup-perl.h"
 
 
-GPerlCallback*
+static GPerlCallback*
 soupperl_message_callback_create (SV *func, SV *data) {
 	GType param_types [] = {
 		SOUP_TYPE_SESSION,
@@ -16,7 +16,7 @@ soupperl_message_callback_create (SV *func, SV *data) {
 }
 
 
-void
+static void
 soupperl_message_callback (SoupSession *session, SoupMessage *msg, gpointer data) {
 	GPerlCallback *callback = (GPerlCallback *) data;
 	
@@ -27,7 +27,7 @@ soupperl_message_callback (SoupSession *session, SoupMessage *msg, gpointer data
 	gperl_callback_invoke(callback, NULL, session, msg, callback->data);
 }
 
-
+/* This function is shared with SessionAsync.xs */
 void
 soupperl_queue_message (SoupSession *session, SoupMessage *msg, SV  *sv_callback, SV *sv_user_data) {
 	GPerlCallback *callback = NULL;
