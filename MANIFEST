@@ -9,7 +9,10 @@ COPYING
 Changes
 maps
 soup-perl.h
+soup-perl-private.h
 xs/Buffer.xs
 xs/Message.xs
 xs/MessageBody.xs
+xs/Session.xs
+xs/SessionAsync.xs
 xs/Soup.xs

@@ -43,8 +43,8 @@ sub test_server {
     isa_ok($session, 'HTTP::Soup::SessionAsync');
 
 
-    my $message = HTTP::Soup::Message->new(GET => "http://localhost:$port/a");
     Glib::Timeout->add(500, sub {
+        my $message = HTTP::Soup::Message->new(GET => "http://localhost:$port/a");
         $session->queue_message($message, sub {
             #FIXME if we uncomment the next line then the instance of $message
             #      declaredabove will go out of scope and we endup with a
