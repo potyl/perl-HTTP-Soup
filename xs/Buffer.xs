@@ -4,6 +4,21 @@
 MODULE = HTTP::Soup::Buffer  PACKAGE = HTTP::Soup::Buffer  PREFIX = soup_buffer_
 
 
+SoupBuffer*
+soup_buffer_new (CLASS, int use, SV *sv_data)
+	C_ARGS: use, data, length
+	PREINIT:
+		gconstpointer data;
+		gsize length;
+
+	CODE:
+		data = SvPV(sv_data, length);
+		RETVAL = soup_buffer_new(use, data, length);
+
+	OUTPUT:
+		RETVAL
+
+
 SV*
 data (SoupBuffer *buffer, const char *val = NULL)
 	CODE:
