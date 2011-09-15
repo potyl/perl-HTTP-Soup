@@ -1,4 +1,5 @@
 #ifndef _SOUP_PERL_H_
+#define _SOUP_PERL_H_
 
 #include <gperl.h>
 
