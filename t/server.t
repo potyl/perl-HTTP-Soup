@@ -46,11 +46,6 @@ sub test_server {
     Glib::Timeout->add(500, sub {
         my $message = HTTP::Soup::Message->new(GET => "http://localhost:$port/a");
         $session->queue_message($message, sub {
-            #FIXME if we uncomment the next line then the instance of $message
-            #      declaredabove will go out of scope and we endup with a
-            #      message that has been g_free(), we need to keep a reference
-            #      around untill queue_message() gets fixed in the XS and
-            #      increments the refcount
             my ($session, $message) = @_;
 
             is($message->status_code, 203, "status_code");
