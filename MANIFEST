@@ -3,6 +3,7 @@ Makefile.PL
 MANIFEST
 MANIFEST.SKIP
 README
+t/buffer.t
 t/cookie.t
 t/session.t
 t/server.t
