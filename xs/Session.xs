@@ -45,3 +45,27 @@ void
 soup_session_queue_message (SoupSession *session, SoupMessage *msg, SV *sv_callback, SV *sv_user_data = NULL);
 	CODE:
 		soupperl_queue_message(session, msg, sv_callback, sv_user_data);
+
+
+void
+soup_session_remove_feature_by_type (SoupSession *session, const char *name)
+	PREINIT:
+		GType type;
+
+	CODE:
+		type = gperl_type_from_package(name);
+		if (type) {
+			soup_session_remove_feature_by_type(session, type);
+		}
+
+
+void
+soup_session_add_feature_by_type (SoupSession *session, const char *name)
+	PREINIT:
+		GType type;
+
+	CODE:
+		type = gperl_type_from_package(name);
+		if (type) {
+			soup_session_add_feature_by_type(session, type);
+		}
