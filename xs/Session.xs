@@ -42,6 +42,6 @@ MODULE = HTTP::Soup::Session  PACKAGE = HTTP::Soup::Session  PREFIX = soup_sessi
 
 
 void
-soup_session_queue_message (SoupSession *session, SoupMessage *msg, SV  *sv_callback, SV *sv_user_data = NULL);
+soup_session_queue_message (SoupSession *session, SoupMessage *msg, SV *sv_callback, SV *sv_user_data = NULL);
 	CODE:
 		soupperl_queue_message(session, msg, sv_callback, sv_user_data);
