@@ -99,7 +99,7 @@ sub main {
 		META_MERGE => {
 			resources => {
 				homepage    => 'https://github.com/potyl/perl-HTTP-Soup',
-				bucktracker => 'https://github.com/potyl/perl-HTTP-Soup/issues',
+				bugtracker  => 'https://github.com/potyl/perl-HTTP-Soup/issues',
 				repository  => 'https://github.com/potyl/perl-HTTP-Soup',
 			},
 		},
