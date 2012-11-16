@@ -7,3 +7,4 @@ Soup.bs
 build
 xs/*.c
 xs/*.o
+MYMETA.yml
