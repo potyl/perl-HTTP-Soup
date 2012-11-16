@@ -47,7 +47,7 @@ For more information about libsoup refer to the library's web site:
 use warnings;
 use strict;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Glib::Object::Introspection;
 
