@@ -3,6 +3,8 @@ Makefile.PL
 MANIFEST
 MANIFEST.SKIP
 README
+examples/client-async.pl
+examples/client-async-advanced.pl
 t/buffer.t
 t/cookie.t
 t/session.t
